@@ -18,16 +18,16 @@ public class Dice {
         // Ex: If the user rolls a 5 and a 6, their roll value will be 65.
         //     If they roll a 2 and a 2, they'll have 22 etc.
 
-        this.firstDie = roll();
-        this.secondDie = roll();
+        firstDie = roll();
+        secondDie = roll();
 
         // Check for doubles, return 11 * any of the die values.
-        if (this.firstDie == this.secondDie) {
-            return 11 * this.firstDie;
+        if (firstDie == secondDie) {
+            return 11 * firstDie;
         }
 
         // If they're not doubles, then return 10 * MaxDie + MinDie:
-        return (10 * Math.max(this.firstDie, this.secondDie)) + Math.min(this.firstDie, this.secondDie);
+        return (10 * Math.max(firstDie, secondDie)) + Math.min(firstDie, secondDie);
     }
 
     private static int roll() {

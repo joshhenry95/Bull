@@ -11,33 +11,32 @@ public class Player {
     private String name;
 
     public Player(String n) {
-        this.score = 1; // DELETE CHANGE THIS BACK TO 6
-        this.name = n;
-
+        score = 6;
+        name = n;
     }
 
 
     public int getScore() {
-        return this.score;
+        return score;
     }
 
     public void setRollValue(int n) {
-        this.rollValue = n;
+        rollValue = n;
     }
 
     public int getRollValue() {
-        return this.rollValue;
+        return rollValue;
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void decreaseScore() {
-        this.score--;
+        score--;
 
-        if (this.score == 0) {
-            Database.removePlayerByName(this.name);
+        if (score == 0) {
+            Database.removePlayerByName(name);
         }
     }
 }
