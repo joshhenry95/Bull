@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bull.bull.ScoresActivity"
+    android:background="@drawable/background"
+    android:id="@+id/activity_scores">
+
+    <TextView
+        android:id="@+id/score_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="36dp"
+        android:textColor="#000"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="71dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/score_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="36dp"
+        android:textColor="#000"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/score_6"
+        app:layout_constraintRight_toRightOf="@+id/score_6"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="54dp"
+        app:layout_constraintLeft_toLeftOf="@+id/score_6" />
+
+    <TextView
+        android:id="@+id/score_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="36dp"
+        android:textColor="#000"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/score_5"
+        app:layout_constraintRight_toRightOf="@+id/score_5"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintLeft_toLeftOf="@+id/score_5" />
+
+    <TextView
+        android:id="@+id/score_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="36dp"
+        android:textColor="#000"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/score_4"
+        app:layout_constraintRight_toRightOf="@+id/score_4"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintLeft_toLeftOf="@+id/score_4" />
+
+    <TextView
+        android:id="@+id/score_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="36dp"
+        android:textColor="#000"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/score_3"
+        app:layout_constraintRight_toRightOf="@+id/score_3"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintLeft_toLeftOf="@+id/score_3" />
+
+    <TextView
+        android:id="@+id/score_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="36dp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/score_2"
+        android:layout_marginTop="52dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintLeft_toLeftOf="@+id/score_2"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

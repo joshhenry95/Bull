@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bull.bull.RulesActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/rules_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RULES:"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/first_rule_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Each player starts with six points; you win the game when all other players have no points
+left, and you have at least one!"
+        android:textSize = "16dp"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/rules_label"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/second_rule_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The turn-direction is clockwise, so the person
+to your right goes before you do. When it is your turn, \nthe player to your right will claim that they
+have rolled a certain number (i.e. 53 = a 5 and a 3)."
+        android:textSize="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/first_rule_label"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/first_rule_label"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/first_rule_label"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you pressed 'Bull!' and they were lying, they
+lose a point. But if they weren't lying, you lose one! \nIf you believed them, your roll must be
+higher than the player to your right; if it's not, lie
+to the player to your left about what you rolled! "
+        android:textSize="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/second_rule_label"
+        android:layout_marginTop="21dp"
+        app:layout_constraintTop_toBottomOf="@+id/second_rule_label"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/second_rule_label"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If any player rolls a 3 and a 1 (31), no lying is required;
+it is simply the next player's turn (this is a called
+'clear'). If a player rolls a 2 and a 1 (21), all other
+players lose a point!"
+        android:textSize="16dp"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doubles beat non-doubles (so a pair of two's [22]
+beats a 6 and a 5 [65]). "
+        android:textSize="16dp"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/back_button"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="73dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>
